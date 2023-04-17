@@ -8,10 +8,8 @@ jobs:
     steps:
     - name: repo-sync
       uses: wei/git-sync@v3
-      env:
+      with:
         SOURCE_REPO: "https://github.com/ograu/nils-discord-bot"
         SOURCE_BRANCH: "main"
         DESTINATION_REPO: ${{ secrets.GLITCH_GIT_URL }}
         DESTINATION_BRANCH: "main"
-      with:
-        args: $GLITCH_GIT_URL $SOURCE_BRANCH $DESTINATION_REPO $DESTINATION_BRANCH
