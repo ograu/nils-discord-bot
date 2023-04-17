@@ -41,6 +41,11 @@ client.on('messageCreate', async (msg) => {
     return
   }
 
+  if (msg.content === "marco") {
+    msg.reply("polo")
+    return
+  }
+
   if (respostes.isHolaBot(msg)) {
     msg.reply(`Hola ${msg.author.username}!`)
     return
