@@ -7,9 +7,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: repo-sync
-      uses: wei/git-sync@v3
+      uses: kanadgupta/glitch-sync@main
       with:
-        SOURCE_REPO: "https://github.com/ograu/nils-discord-bot"
-        SOURCE_BRANCH: "main"
-        DESTINATION_REPO: ${{ secrets.GLITCH_GIT_URL }}
-        DESTINATION_BRANCH: "master"
+        auth-token: '${{ secrets.AUTH_TOKEN }}'
+        project-id: '${{ secrets.PROJECT_ID }}'
+        # path: 'dist' # optional
