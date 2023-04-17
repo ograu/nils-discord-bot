@@ -12,4 +12,4 @@ jobs:
         SOURCE_REPO: "https://github.com/ograu/nils-discord-bot"
         SOURCE_BRANCH: "main"
         DESTINATION_REPO: ${{ secrets.GLITCH_GIT_URL }}
-        DESTINATION_BRANCH: "main"
+        DESTINATION_BRANCH: "master"
