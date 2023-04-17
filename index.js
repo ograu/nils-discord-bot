@@ -42,7 +42,7 @@ client.on('messageCreate', async (msg) => {
   }
 
   if (respostes.isHolaBot(msg)) {
-    msg.reply(`Adéuuuuu ${msg.author.username}!`)
+    msg.reply(`Adéuuuuuuuuuuuuu ${msg.author.username}!`)
     return
   }
 
